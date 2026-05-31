@@ -1,88 +1,78 @@
 # Agent Incident Relay MCP
 
-> ## 🧱 Part of the MEOK A2A Substrate (£999/mo) + Governance Substrate (£499/mo)
-> See [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/agent_incident_relay_mcp/)
 
-# Article 73 5-clock broadcaster — one incident, five signed regulatory reports
+> Agent Incident Relay MCP - Article 73 5-clock broadcaster
 
-<!-- mcp-name: io.github.CSOAI-ORG/agent-incident-relay-mcp -->
+Agent Incident Relay MCP - Article 73 5-clock broadcaster. One incident -> simultaneous signed reports to EU AI Act, DORA, NIS2, GDPR, ISO 42001. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/agent-incident-relay-mcp)](https://pypi.org/project/agent-incident-relay-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this does
+## 🚀 Quick Start
 
-EU regulated AI systems live under **five concurrent regulatory regimes**. When an incident happens, missing one clock = enforcement action.
+```bash
+# Install via pip
+pip install agent_incident_relay_mcp
 
-This MCP takes ONE incident description, classifies which regimes apply, and starts ALL the clocks simultaneously. It emits per-regime signed payloads ready for submission to each national authority.
+# Or install via Smithery
+npx -y @smithery/cli@latest install agent-incident-relay-mcp --client claude
+```
 
-| # | Regime | Earliest clock | Authority |
-|---|---|---|---|
-| 1 | **EU AI Act Article 73** | 15 days to deployer | National AI competent authority + AI Office |
-| 2 | **DORA Article 19** | 4 hours initial | National financial supervisor + ESAs |
-| 3 | **NIS2 Article 23** | 24 hours early warning | National CSIRT + competent authority |
-| 4 | **GDPR Article 33** | 72 hours | National DPA |
-| 5 | **ISO/IEC 42001 cl 10.1** | 24h internal | Internal AIMS + external auditor |
+## ✨ Features
 
-## Tools
+- Article 73 incident reporting
+- 5-clock broadcast
+- Escalation workflows
+- Audit trail
+- Regulatory submission
 
-| Tool | Purpose |
-|---|---|
-| `classify_incident(description, severity?)` | Which regimes apply? Auto-detect severity. |
-| `relay_incident(description, regimes?, severity, entity_id)` | Start all clocks from one detection timestamp |
-| `check_clock_status(incident_id)` | How many hours remain on each clock? |
-| `generate_authority_payload(incident_id, regime, extra_fields?)` | Regime-formatted submission payload |
-| `sign_relay(incident_id)` | HMAC-seal the full 5-regime relay for audit |
-| `list_regimes()` | Full regime spec — clocks, authorities, schemas |
+## 📖 Documentation
 
-## Why this matters
+- [Full Documentation](https://docs.meok.ai/agent-incident-relay-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-Today GRC teams maintain five separate spreadsheets and miss deadlines because the clocks all start at different events. This MCP gives you one incident_id that drives all five regimes from the same detection timestamp, with cryptographic non-repudiation.
+## 🛡️ Compliance
 
-Companion to:
-- `ai-incident-reporting-mcp` (classifier-only, no broadcast)
-- `dora-nis2-crosswalk-mcp` (regulation-to-regulation map)
-- `agent-audit-logger-mcp` (the chain-of-custody log for the submitted payloads)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Sister MCPs
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Part of the MEOK **A2A** + **Governance** packs:
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-- `bft-progress-council-mcp` — anti-loop for the response team
-- `agent-audit-logger-mcp` — HMAC-chained log of every submission
-- `agent-policy-enforcement-mcp` — gate on incident-response approval
-- `eu-ai-act-compliance-mcp` — Article 73 text + thresholds
+## 🏢 Enterprise
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Pricing
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| Governance Substrate | £499/mo |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-Buy: https://meok.ai/a2a
+## 🤝 Part of the MEOK Ecosystem
 
-## Licence
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-<!-- BUY-LADDER:START -->
+## 📜 License
 
-## 💸 Try MEOK in 30 seconds — instant buy ladder
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-| Tier | Price | What you get | Stripe |
-|---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+---
 
-> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
-> Verify any signed report at <https://meok.ai/verify>.
-
-<!-- BUY-LADDER:END -->
-
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
