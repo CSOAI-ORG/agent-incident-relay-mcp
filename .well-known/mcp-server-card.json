@@ -1,0 +1,31 @@
+{
+  "name": "agent-incident-relay-mcp",
+  "title": "Agent Incident Relay Mcp",
+  "description": "Agent Incident Relay MCP \u2014 Article 73 5-clock broadcaster. One incident \u2192 simultaneous signed reports to EU AI Act Art 73, DORA Art 19, NIS2 Art 23, GDPR Art 33, ISO 42001 cl 10.1. By MEOK AI Labs.",
+  "version": "1.0.1",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "classify_incident"
+    },
+    {
+      "name": "relay_incident"
+    },
+    {
+      "name": "check_clock_status"
+    },
+    {
+      "name": "generate_authority_payload"
+    },
+    {
+      "name": "sign_relay"
+    },
+    {
+      "name": "list_regimes"
+    }
+  ]
+}
