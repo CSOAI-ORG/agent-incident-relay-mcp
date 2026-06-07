@@ -1,3 +1,5 @@
+[![MCP Scorecard: 90/100](https://img.shields.io/badge/proofof.ai-90%2F100-5b21b6)](https://proofof.ai/scorecard/agent-incident-relay-mcp.html)
+
 mcp-name: io.github.CSOAI-ORG/agent-incident-relay-mcp
 
 # Agent Incident Relay MCP
