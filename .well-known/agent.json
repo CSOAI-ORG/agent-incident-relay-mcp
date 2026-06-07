@@ -1,0 +1,77 @@
+{
+  "name": "agent-incident-relay-mcp",
+  "description": "Agent Incident Relay MCP \u2014 Article 73 5-clock broadcaster. One incident \u2192 simultaneous signed",
+  "url": "https://proofof.ai/scorecard/agent-incident-relay-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "classify_incident",
+      "name": "Classify Incident",
+      "description": "classify_incident via agent-incident-relay-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "relay_incident",
+      "name": "Relay Incident",
+      "description": "relay_incident via agent-incident-relay-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_clock_status",
+      "name": "Check Clock Status",
+      "description": "check_clock_status via agent-incident-relay-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_authority_payload",
+      "name": "Generate Authority Payload",
+      "description": "generate_authority_payload via agent-incident-relay-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_relay",
+      "name": "Sign Relay",
+      "description": "sign_relay via agent-incident-relay-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_regimes",
+      "name": "List Regimes",
+      "description": "list_regimes via agent-incident-relay-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
