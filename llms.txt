@@ -1,0 +1,33 @@
+# Agent Incident Relay MCP
+
+> Agent Incident Relay MCP - Article 73 5-clock broadcaster
+
+`agent-incident-relay-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install agent-incident-relay-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx agent-incident-relay-mcp
+```
+
+## Tools
+
+- `classify_incident`
+- `relay_incident`
+- `check_clock_status`
+- `generate_authority_payload`
+- `sign_relay`
+- `list_regimes` — Return the full regime spec — clocks, authorities, payload schemas.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/agent-incident-relay-mcp
+- PyPI: https://pypi.org/project/agent-incident-relay-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
