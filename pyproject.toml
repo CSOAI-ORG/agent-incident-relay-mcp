@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agent-incident-relay-mcp"
-version = "1.0.1"
+version = "1.0.3"
 description = "Agent Incident Relay MCP — Article 73 5-clock broadcaster. One incident → simultaneous signed reports to EU AI Act Art 73, DORA Art 19, NIS2 Art 23, GDPR Art 33, ISO 42001 cl 10.1. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
