@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+server.py
+agent_incident_relay_mcp.egg-info/PKG-INFO
+agent_incident_relay_mcp.egg-info/SOURCES.txt
+agent_incident_relay_mcp.egg-info/dependency_links.txt
+agent_incident_relay_mcp.egg-info/entry_points.txt
+agent_incident_relay_mcp.egg-info/requires.txt
+agent_incident_relay_mcp.egg-info/top_level.txt
+tests/test_relay.py
