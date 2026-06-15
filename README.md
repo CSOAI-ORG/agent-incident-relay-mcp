@@ -115,3 +115,8 @@ Once configured, ask your assistant, for example:
 - "Use `classify_incident` to …"
 - "Use `relay_incident` to …"
 - "Use `check_clock_status` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`agent-audit-logger-mcp`](https://github.com/CSOAI-ORG/agent-audit-logger-mcp), [`meok-eu-ai-act-art-13-ifu-mcp`](https://github.com/CSOAI-ORG/meok-eu-ai-act-art-13-ifu-mcp)
